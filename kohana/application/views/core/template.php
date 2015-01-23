@@ -13,6 +13,7 @@
 			include Kohana::find_file ( 'views', 'core/404' );
 		}
 		?>
+	<div style="clear: both;"></div>
 	<footer>
 	<?php include Kohana::find_file ( 'views', 'core/footer' ); ?>
 	</footer>
