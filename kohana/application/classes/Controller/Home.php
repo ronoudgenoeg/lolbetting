@@ -4,17 +4,18 @@ class Controller_Home extends Controller {
 
 	public function action_index()
 	{
-		$default = Database::instance();
-		$users = DB::select()->from('user')->execute() ;
+		$user = new Model_User();
+		$user->username = 'Dmagoz';
+		$user->email = 'ronoudgenoeg@gmail.com';
+		$user->password = '123';
+		$user->save();
 		
-		foreach($users as $user){
-			echo $user['username'];
-		}
+		
 		
 		$view = View::factory('core/template');
 		$view->title = "Welcome!";
 		$view->body = 'home/index';
-		$view->test = "test";
+		$view->test = "content";
 		
 		$this->response->body($view);
 	}

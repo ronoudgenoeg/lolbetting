@@ -126,7 +126,7 @@ Kohana::modules(array(
 	 'database'   => MODPATH.'database',   // Database access
 	// 'image'      => MODPATH.'image',      // Image manipulation
 	// 'minion'     => MODPATH.'minion',     // CLI Tasks
-	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+	 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));
@@ -138,7 +138,7 @@ Kohana::modules(array(
  * If you have not defined a cookie salt in your Cookie class then
  * uncomment the line below and define a preferrably long salt.
  */
-// Cookie::$salt = NULL;
+ Cookie::$salt = 'A33A0BDFCF7D04BE9E4B0FAED94017CB119C789BF6BA5E303898C5E67328D116';
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
