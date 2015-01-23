@@ -1,5 +1,2 @@
 application/cache/*
 application/logs/*
-.settings/*
-.buildpath
-.project
