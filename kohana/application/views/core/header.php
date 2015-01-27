@@ -1,6 +1,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="<?php echo url::base();?>resources/css/styling.css" rel="stylesheet">
 <!-- <link rel="icon" href="../../favicon.ico"> -->
 <title><?php if(isset($title)){echo $title;} ?></title>
 

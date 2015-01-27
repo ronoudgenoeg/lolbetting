@@ -10,12 +10,6 @@ class Controller_Home extends Controller {
 // 		$user->password = '123';
 // 		$user->save();
 		
- 		$user = ORM::factory('user', 'ronoudgenoeg@gmail.com');
- 		if($user->loaded()){
- 			$user->username = 'dmagoz_changed';
- 			$user->save();
- 		}
-		
 		$view = View::factory('core/template');
 		$view->title = "Welcome!";
 		$view->body = 'home/index';
